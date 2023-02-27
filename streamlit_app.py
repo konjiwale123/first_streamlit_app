@@ -1,7 +1,6 @@
 import streamlit
 import pandas
 import requests
-import snowflake.connector
 from urllib.error import URLError
 
 streamlit.title('my parents new healthy diner')
@@ -64,6 +63,6 @@ streamlit.write('Thanks for adding ',add_my_fruit)
 
 my_cur.execute("insert into fruit_load_list values ('from streamlit')")
 
-
+import snowflake.connector
 
 
